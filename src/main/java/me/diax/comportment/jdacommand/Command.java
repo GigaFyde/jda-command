@@ -16,7 +16,7 @@
 
 package me.diax.comportment.jdacommand;
 
-import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.api.entities.Message;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public interface Command extends Comparable<Command> {
      * This is the method called on to execute the command.
      *
      * @param message The message which triggered the command.
-     * @param args The arguments of the commands.
+     * @param args    The arguments of the commands.
      * @since 1.0.0
      */
     void execute(Message message, String args);
